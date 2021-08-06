@@ -1,9 +1,15 @@
-# tbot_scuole
-Il seguente bot Telegram nasce dall'esigenza di trovare in tempo reale ed istantaneamente la scuola più vicina alla nostra posizione attuale. L'obiettivo è quello di fornire uno strumento facile ed efficace, utilizzabile dai cittadini, per ottenere un servizio veloce ed affidabile nella consultazione di archivi comunali per un servizio informativo migliore.
-# come trovare il bot
-Per utilizzare le funzionalità del bot è sufficiente cercare tramite la barra di ricerca di Telegram le parole chiave " Lab37100 ". In questo modo vengono selezionati 4 differenti bot. Precisamente sono "Scuole Verona", "Parcheggi Verona", "Farmacie Verona", "Parchi Verona".
-# istruzioni per l'uso
-In questo caso apriamo Scuole Verona. Successivamente all'apertura della chat il bot ci accoglie con un messaggio di benvenuto. Inoltre chiede di inviargli la nostra posizione per trovare la scuola più vicina a noi. Quindi risulta fondamentale allegare ed inviare come un normale messaggio telegram la propria posizione attuale. Si ricorda di attivare il GPS del proprio smartphone. In risposta al nostro messaggio il sistema invia istantaneamente il nome della scuola con annessa la distanza dalla nostra geolocalizzazione e l'indirizzo. Inoltre il bot invia la posizione della scuola sulla mappa. In questo modo è possibile visualizzare graficamente la posizione cercate o impostare il navigatore sulla medesima destinazione.
-# credits
-Lavoro sviluppato da Innovation Lab in collaborazione con Comune di Verona.
+# Introduzione
+Il presente bot Telegram nasce dall'esigenza di trovare in tempo reale ed istantaneamente la scuola più vicina alla nostra posizione. L'obiettivo è quello di fornire uno strumento facile ed efficace, utilizzabile dai cittadini, per ottenere un servizio veloce ed affidabile nella consultazione di archivi comunali per un servizio informativo migliore.
+# Istruzioni per l'uso
+Per usufruire del bot rechiamoci sull'app Telegram, dopo di che digitiamo nella barra di ricerca "Lab37100" e tra i risultati clicchiamo su "Scuole Verona".
+Avviando il bot con il comando "/start" ci accoglie il messaggio di benvenuto che ci invita a inviare la nostra posizione. Inviandola riceveremo istantaneamente le informazioni sulla scuole, tra cui il nome, la distanza, l'indirizzo e il numero di telefono, seguiti dalla posizione geografica, utile per avviare il navigatore.
+# Specifiche tecniche
+Il codice sorgente è formato da due parti:  
+1 - La prima parte si collega al database contenenti le informazioni sui parchi fornite dal Comune di Verona, e salva quest'ultime in locale su array. Questa scelta è stata
+    effettuata al fine di evitare continue richieste al database ogni volta che un utente effettua una ricerca, rischiando di sovraccaricare il database di richieste. In questo
+    modo invece viene svolto tutto in locale tramite array e funzioni, senza alcun coinvolgimento del database.  
+2 - La seconda parte gestisce il bot vero e proprio. Infatti è configurato in modo da rispondere in base ai comandi inviati; in particolare inviando il comando "/start" ci dà il
+    benvenuto nel bot, inviando la posizione ci restutuisce le informazioni sopra citate, e infine inviando un qualsiasi altro messaggio ci dirà che non è un comando valido.
+# Crediti
+Progetto sviluppato da Innovation Lab in collaborazione con Comune di Verona.
 ![WhatsApp Image 2021-07-30 at 15 20 14](https://user-images.githubusercontent.com/87977853/127863204-46d984eb-4025-479b-b6e6-4bd8f8e38c5c.jpeg)
