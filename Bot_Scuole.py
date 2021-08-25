@@ -18,7 +18,7 @@ def distanza(update: Update, context: CallbackContext) -> None:
         d = []
         for i in range(0,len(coord_x)):
             d.append(dist(lat1,lon1,coord_x[i],coord_y[i]))
-        e = d[:]        #uso e come copia
+        e = d[:]
         d.sort()
         ind = 0
         for i in range(0,len(d)):
